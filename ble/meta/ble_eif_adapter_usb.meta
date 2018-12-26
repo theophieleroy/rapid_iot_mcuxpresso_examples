@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_eif_adapter_usb" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_eif_adapter_usb.meta"/>
+      </source>
+      <source path="./../modules/eif_adapter/api">
+        <files mask="eif_adapter.h"/>
+      </source>
+      <source path="./../modules/eif_adapter/src">
+        <files mask="eif_adapter.c"/>
+      </source>
+      <source path="./../../usb/device">
+        <files mask="usb_device.h"/>
+        <files mask="usb_device_dci.c"/>
+        <files mask="usb_device_dci.h"/>
+        <files mask="usb_device_lpcip3511.c"/>
+        <files mask="usb_device_lpcip3511.h"/>
+      </source>
+      <source path="./../../usb/include">
+        <files mask="usb.h"/>
+      </source>
+      <source path="./../../usb/osa">
+        <files mask="usb_osa.h"/>
+        <files mask="usb_osa_bm.c"/>
+        <files mask="usb_osa_bm.h"/>
+      </source>
+      <source path="./../modules/eif_adapter/src/usb_vcom_adapter">
+        <files mask="usb_device_config.h"/>
+        <files mask="usb_device_descriptor.c"/>
+        <files mask="usb_device_descriptor.h"/>
+        <files mask="usb_vcom_adapter.c"/>
+        <files mask="usb_vcom_adapter.h"/>
+        <files mask="usb_device_cdc_acm.c"/>
+        <files mask="usb_device_cdc_acm.h"/>
+        <files mask="usb_device_ch9.c"/>
+        <files mask="usb_device_ch9.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

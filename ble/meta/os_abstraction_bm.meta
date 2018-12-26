@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.os_abstraction_bm" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="os_abstraction_bm.meta"/>
+      </source>
+      <source path="./../modules/OSAbstraction/Interface">
+        <files mask="fsl_os_abstraction.h"/>
+        <files mask="fsl_os_abstraction_config.h"/>
+        <files mask="fsl_os_abstraction_bm.h"/>
+      </source>
+      <source path="./../modules/OSAbstraction/Source">
+        <files mask="fsl_os_abstraction_bm.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

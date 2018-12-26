@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.nvm" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="nvm.meta"/>
+      </source>
+      <source path="./../modules/NVM/Interface">
+        <files mask="NVM_Interface.h"/>
+      </source>
+      <source path="./../modules/NVM/Source">
+        <files mask="NV_Flash.h"/>
+        <files mask="NV_Flash.c"/>
+        <files mask="NV_FsciCommands.h"/>
+        <files mask="NV_FsciCommands.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

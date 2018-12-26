@@ -1,0 +1,27 @@
+/*!
+
+@defgroup dspi_driver DSPI
+@ingroup drivers
+@brief DSPI driver
+
+@defgroup dspi_hal DSPI HAL
+@ingroup dspi_driver
+@brief DSPI peripheral HAL
+
+@defgroup dspi_master_driver DSPI Master Driver
+@ingroup dspi_driver
+@brief DSPI master mode peripheral driver
+
+@defgroup dspi_slave_driver DSPI Slave Driver
+@ingroup dspi_driver
+@brief DSPI slave mode peripheral driver
+
+@defgroup dspi_shared_irq DSPI Shared IRQ Driver
+@ingroup dspi_driver
+@brief DSPI shared IRQ driver for master and slave drivers
+
+@defgroup dspi_types Shared DSPI Types
+@ingroup dspi_driver
+@brief Shared types for DSPI drivers
+
+*/

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_blpc" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_blpc.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/blp">
+        <files mask="blp_common.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/blp/blpc/api">
+        <files mask="blpc_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/blp/blpc/src">
+        <files mask="blpc.c"/>
+        <files mask="blpc.h"/>
+        <files mask="blpc_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

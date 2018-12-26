@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_rscps" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_rscps.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/rscp">
+        <files mask="rscp_common.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/rscp/rscps/api">
+        <files mask="rscps_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/rscp/rscps/src">
+        <files mask="rscps.c"/>
+        <files mask="rscps.h"/>
+        <files mask="rscps_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

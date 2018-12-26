@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.rco32k_calibration" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="rco32k_calibration.meta"/>
+      </source>
+      <source path="./../modules/rco32k_calibration/src">
+        <files mask="rco32k_calibration.c"/>
+      </source>
+      <source path="./../modules/rco32k_calibration/api">
+        <files mask="rco32k_calibration.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

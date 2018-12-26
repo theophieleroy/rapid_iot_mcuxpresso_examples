@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_bass" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_bass.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/bas/bass/api">
+        <files mask="bass_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/bas/bass/src">
+        <files mask="bass.c"/>
+        <files mask="bass.h"/>
+        <files mask="bass_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

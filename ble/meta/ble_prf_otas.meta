@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_otas" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_otas.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/ota">
+        <files mask="ota_common.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/ota/otas/api">
+        <files mask="otas_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/ota/otas/src">
+        <files mask="otas.c"/>
+        <files mask="otas.h"/>
+        <files mask="otas_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

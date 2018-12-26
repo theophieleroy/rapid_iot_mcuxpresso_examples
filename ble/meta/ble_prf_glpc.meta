@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_glpc" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_glpc.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/glp">
+        <files mask="glp_common.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/glp/glpc/api">
+        <files mask="glpc_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/glp/glpc/src">
+        <files mask="glpc.c"/>
+        <files mask="glpc.h"/>
+        <files mask="glpc_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

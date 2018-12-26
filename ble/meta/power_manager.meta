@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.power_manager" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="power_manager.meta"/>
+      </source>
+      <source path="./../modules/power_manager/src">
+        <files mask="power_manager.c"/>
+      </source>
+      <source path="./../modules/power_manager/api">
+        <files mask="power_manager.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

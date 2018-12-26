@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_app_hogprh" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_app_hogprh.meta"/>
+      </source>
+      <source path="./../modules/app/src">
+        <files mask="app_hogprh.c"/>
+      </source>
+      <source path="./../modules/app/api">
+        <files mask="app_hogprh.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_app_common" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_app_common.meta"/>
+      </source>
+      <source path="./../modules/app/src">
+        <files mask="app_ble.c"/>
+        <files mask="app_ble_task.c"/>
+        <files mask="app_gap.c"/>
+        <files mask="app_gatt.c"/>
+      </source>
+      <source path="./../modules/app/api">
+        <files mask="app_config.h"/>
+        <files mask="app_ble.h"/>
+        <files mask="app_ble_task.h"/>
+        <files mask="app_gap.h"/>
+        <files mask="app_gatt.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

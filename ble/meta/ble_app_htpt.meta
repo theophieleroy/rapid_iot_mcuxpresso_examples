@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_app_htpt" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_app_htpt.meta"/>
+      </source>
+      <source path="./../modules/app/src">
+        <files mask="app_htpt.c"/>
+      </source>
+      <source path="./../modules/app/api">
+        <files mask="app_htpt.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

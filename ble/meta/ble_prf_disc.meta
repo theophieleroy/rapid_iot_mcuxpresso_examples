@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_disc" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_disc.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/dis/disc/api">
+        <files mask="disc_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/dis/disc/src">
+        <files mask="disc.c"/>
+        <files mask="disc.h"/>
+        <files mask="disc_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

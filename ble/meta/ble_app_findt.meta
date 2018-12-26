@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_app_findt" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_app_findt.meta"/>
+      </source>
+      <source path="./../modules/app/src">
+        <files mask="app_findt.c"/>
+      </source>
+      <source path="./../modules/app/api">
+        <files mask="app_findt.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

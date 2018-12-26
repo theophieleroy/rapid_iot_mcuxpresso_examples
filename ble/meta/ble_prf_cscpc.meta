@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_cscpc" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_cscpc.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/cscp/cscpc/src">
+        <files mask="cscpc.c"/>
+        <files mask="cscpc.h"/>
+        <files mask="cscpc_task.c"/>
+      </source>
+      <source path="./../ip/ble/profiles/cscp/cscpc/api">
+        <files mask="cscpc_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/cscp">
+        <files mask="cscp_common.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

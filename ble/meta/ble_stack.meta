@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_stack" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_stack.meta"/>
+      </source>
+      <source path="./../ip">
+      </source>
+      <source path="./../ip/ble/hl/src/gatt">
+        <files mask="gatt.h"/>
+      </source>
+      <source path="./../modules/common/api">
+        <files mask="compiler.h"/>
+        <files mask="co_bt.h"/>
+        <files mask="co_endian.h"/>
+        <files mask="co_error.h"/>
+        <files mask="co_hci.h"/>
+        <files mask="co_list.h"/>
+        <files mask="co_llcp.h"/>
+        <files mask="co_lmp.h"/>
+        <files mask="co_math.h"/>
+        <files mask="co_utils.h"/>
+        <files mask="co_version.h"/>
+        <files mask="EmbeddedTypes.h"/>
+      </source>
+      <source path="./../ip/ble/hl/src/gap/gapc">
+        <files mask="gapc_int.h"/>
+        <files mask="gapc_sig.h"/>
+      </source>
+      <source path="./../ip/ble/hl/src/gatt/gattc">
+        <files mask="gattc_int.h"/>
+      </source>
+      <source path="./../modules/ke/api">
+        <files mask="ke.h"/>
+        <files mask="ke_config.h"/>
+        <files mask="ke_event.h"/>
+        <files mask="ke_mem.h"/>
+        <files mask="ke_msg.h"/>
+        <files mask="ke_task.h"/>
+        <files mask="ke_timer.h"/>
+      </source>
+      <source path="./../ip/ble/hl/src/gatt/gattm">
+        <files mask="gattm_int.h"/>
+      </source>
+      <source path="./../ip/ble/ll/src/lld">
+        <files mask="lld.h"/>
+        <files mask="lld_evt.h"/>
+        <files mask="lld_pdu.h"/>
+        <files mask="lld_sleep.h"/>
+        <files mask="lld_util.h"/>
+        <files mask="lld_wlcoex.h"/>
+      </source>
+      <source path="./../ip/hci/src">
+        <files mask="hci_int.h"/>
+      </source>
+      <source path="./../ip/ble/hl/src/gap/gapm">
+        <files mask="gapm_int.h"/>
+        <files mask="gapm_util.h"/>
+      </source>
+      <source path="./../ip/ble/ll/src/rwble">
+        <files mask="rwble.h"/>
+        <files mask="rwble_config.h"/>
+      </source>
+      <source path="./../libs">
+        <files mask="qnble.c"/>
+        <files mask="error.h"/>
+        <files mask="intc.h"/>
+        <files mask="qnble.h"/>
+      </source>
+      <source path="./../modules/ecc_p256/api">
+        <files mask="ecc_p256.h"/>
+      </source>
+      <source path="./../modules/rwip/api">
+        <files mask="qnip_config.h"/>
+        <files mask="rwip.h"/>
+        <files mask="rwip_config.h"/>
+        <files mask="rwip_task.h"/>
+      </source>
+      <source path="./../modules/ke/src">
+        <files mask="ke_env.h"/>
+        <files mask="ke_queue.h"/>
+      </source>
+      <source path="./../ip/ble/hl/src/gap/smpm">
+        <files mask="smpm_api.h"/>
+      </source>
+      <source path="./../modules/h4tl/api">
+        <files mask="h4tl.h"/>
+      </source>
+      <source path="./../ip/ble/ll/src/em">
+        <files mask="em_buf.h"/>
+        <files mask="em_map_ble.h"/>
+      </source>
+      <source path="./../modules/rf/api">
+        <files mask="rf.h"/>
+      </source>
+      <source path="./../ip/ble/hl/src/gap/smpc">
+        <files mask="smpc_api.h"/>
+        <files mask="smpc_crypto.h"/>
+        <files mask="smpc_int.h"/>
+        <files mask="smpc_util.h"/>
+      </source>
+      <source path="./../ip/ble/hl/api">
+        <files mask="att.h"/>
+        <files mask="gap.h"/>
+        <files mask="gapc_task.h"/>
+        <files mask="gapm_task.h"/>
+        <files mask="gattc_task.h"/>
+        <files mask="gattm_task.h"/>
+        <files mask="l2cc_task.h"/>
+        <files mask="prf_types.h"/>
+        <files mask="rwble_hl_error.h"/>
+      </source>
+      <source path="./../ip/ble/ll/src/llm">
+        <files mask="llm.h"/>
+        <files mask="llm_task.h"/>
+        <files mask="llm_util.h"/>
+      </source>
+      <source path="./../ip/ble/hl/src/l2c/l2cc">
+        <files mask="l2cc_int.h"/>
+        <files mask="l2cc_lecb.h"/>
+        <files mask="l2cc_pdu_int.h"/>
+        <files mask="l2cc_sig.h"/>
+      </source>
+      <source path="./../ip/reg">
+        <files mask="reg_access.h"/>
+        <files mask="reg_assert_mgr.h"/>
+        <files mask="reg_blecore.h"/>
+        <files mask="reg_ble_em_cs.h"/>
+        <files mask="reg_ble_em_ral.h"/>
+        <files mask="reg_ble_em_rx_audio_buffer.h"/>
+        <files mask="reg_ble_em_rx_buffer.h"/>
+        <files mask="reg_ble_em_rx_desc.h"/>
+        <files mask="reg_ble_em_tx_audio_buffer.h"/>
+        <files mask="reg_ble_em_tx_buffer_cntl.h"/>
+        <files mask="reg_ble_em_tx_buffer_data.h"/>
+        <files mask="reg_ble_em_tx_desc.h"/>
+        <files mask="reg_ble_em_wpb.h"/>
+        <files mask="reg_ble_em_wpv.h"/>
+        <files mask="reg_common_em_et.h"/>
+        <files mask="_reg_assert_mgr.h"/>
+        <files mask="_reg_blecore.h"/>
+        <files mask="_reg_ble_em_cs.h"/>
+        <files mask="_reg_ble_em_ral.h"/>
+        <files mask="_reg_ble_em_rx_audio_buffer.h"/>
+        <files mask="_reg_ble_em_rx_buffer.h"/>
+        <files mask="_reg_ble_em_rx_desc.h"/>
+        <files mask="_reg_ble_em_tx_audio_buffer.h"/>
+        <files mask="_reg_ble_em_tx_buffer_cntl.h"/>
+        <files mask="_reg_ble_em_tx_buffer_data.h"/>
+        <files mask="_reg_ble_em_tx_desc.h"/>
+        <files mask="_reg_ble_em_wpb.h"/>
+        <files mask="_reg_ble_em_wpv.h"/>
+        <files mask="_reg_common_em_et.h"/>
+      </source>
+      <source path="./../ip/ahi/api">
+        <files mask="ahi.h"/>
+        <files mask="ahi_task.h"/>
+      </source>
+      <source path="./../ip/ble/hl/src/prf">
+      </source>
+      <source path="./../ip/ble/hl/src/l2c/l2cm">
+        <files mask="l2cm_int.h"/>
+      </source>
+      <source path="./../ip/em/api">
+        <files mask="em_map.h"/>
+      </source>
+      <source path="./../modules/dbg/api">
+        <files mask="dbg.h"/>
+        <files mask="dbg_assert.h"/>
+        <files mask="dbg_mwsgen.h"/>
+        <files mask="dbg_swdiag.h"/>
+        <files mask="dbg_task.h"/>
+      </source>
+      <source path="./../ip/ble/hl/src/gap">
+        <files mask="smp_common.h"/>
+      </source>
+      <source path="./../modules/nvds/api">
+        <files mask="nvds.h"/>
+        <files mask="nvds_adapter.h"/>
+      </source>
+      <source path="./../modules/nvds/src">
+        <files mask="nvds_adapter.c"/>
+      </source>
+      <source path="./../ip/ble/hl/src/gatt/attc">
+        <files mask="attc.h"/>
+      </source>
+      <source path="./../modules/dbg/src">
+        <files mask="dbg_assert.c"/>
+      </source>
+      <source path="./../ip/ble/hl/src/gatt/attm">
+        <files mask="attm_db.h"/>
+      </source>
+      <source path="./../ip/hci/api">
+        <files mask="hci.h"/>
+      </source>
+      <source path="./../ip/ble/ll/src/llc">
+        <files mask="llc.h"/>
+        <files mask="llc_ch_asses.h"/>
+        <files mask="llc_llcp.h"/>
+        <files mask="llc_task.h"/>
+        <files mask="llc_util.h"/>
+      </source>
+      <source path="./../ip/ble/hl/src/gatt/atts">
+        <files mask="atts.h"/>
+      </source>
+      <source path="./../ip/ea/api">
+        <files mask="ea.h"/>
+      </source>
+      <source path="./../ip/ble/hl/inc">
+        <files mask="attm.h"/>
+        <files mask="gapc.h"/>
+        <files mask="gapm.h"/>
+        <files mask="gattc.h"/>
+        <files mask="gattm.h"/>
+        <files mask="l2cc.h"/>
+        <files mask="l2cc_pdu.h"/>
+        <files mask="l2cm.h"/>
+        <files mask="prf.h"/>
+        <files mask="prf_utils.h"/>
+        <files mask="rwble_hl.h"/>
+        <files mask="rwble_hl_config.h"/>
+        <files mask="rwprf_config.h"/>
+        <files mask="smpc.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

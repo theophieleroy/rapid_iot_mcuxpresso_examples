@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.timer_manager" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="timer_manager.meta"/>
+      </source>
+      <source path="./../modules/timer_manager/src">
+        <files mask="timer_adapter.c"/>
+        <files mask="timer_manager.c"/>
+      </source>
+      <source path="./../modules/timer_manager/api">
+        <files mask="timer_adapter.h"/>
+        <files mask="timer_manager.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

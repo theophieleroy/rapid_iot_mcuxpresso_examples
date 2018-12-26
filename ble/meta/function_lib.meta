@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.function_lib" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="function_lib.meta"/>
+      </source>
+      <source path="./../modules/FunctionLib">
+        <files mask="FunctionLib.h"/>
+        <files mask="FunctionLib.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

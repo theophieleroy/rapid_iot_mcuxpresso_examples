@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_anps" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_anps.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/anp">
+        <files mask="anp_common.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/anp/anps/api">
+        <files mask="anps_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/anp/anps/src">
+        <files mask="anps.c"/>
+        <files mask="anps.h"/>
+        <files mask="anps_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

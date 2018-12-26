@@ -1,0 +1,23 @@
+Overview
+====================
+ * The nfc_store_data demo illustrates basic usage of NFC and RTC modules, and Free Fall sensor.
+ * The NFC module uses NTAG.
+ * The RTC module requires communication via SPI1.
+ * The Free Fall sensor is intialised with a default threshold of about 0.25g.
+ 
+ * After each free fall detection, the current date and time are retrieved from the RTC module
+   and saved into NFC buffer.
+
+Usage
+====================
+ * This demo requires user interaction.
+ * User has to:
+      1. download "NFC Tools" application from "Play Store" on an Android device.
+      2. power on the RPK.
+      3. wait for the suggestive message: "Throw me".
+      4. throw and catch the RPK several times.
+      5. on display will be shown the last throw time stamp.
+      6. open "NFC Tools" application and get the device close to the RPK.
+      7. in "Record0 -...-text/plain" section, inside "NFC Tools" application,
+         will be displayed time stamps of the last 4 throws.
+ 

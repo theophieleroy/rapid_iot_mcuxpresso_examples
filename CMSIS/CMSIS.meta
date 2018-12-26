@@ -1,0 +1,675 @@
+<!-- This file is maintained by board support author -->
+<metadata>
+ <components>
+   <component name="platform.Include_common" type="CMSIS_Include" provides="platform.Include" version="5.1.1">
+      <source path="./Include">
+        <files mask="cmsis_armcc.h"/>
+        <files mask="cmsis_armclang.h"/>
+        <files mask="cmsis_gcc.h"/>
+        <files mask="cmsis_compiler.h"/>
+        <files mask="cmsis_version.h"/>
+        <files mask="mpu_armv7.h"/>
+        <files mask="core_armv8mbl.h"/>
+        <files mask="core_armv8mml.h"/>
+        <files mask="arm_common_tables.h"/>
+        <files mask="arm_const_structs.h"/>
+        <files mask="arm_math.h"/>
+        <files mask="cmsis_iccarm.h"/>
+        <files mask="mpu_armv8.h"/>
+      </source>
+    </component>
+   <component name="platform.Include_core_cm0" type="CMSIS_Include" provides="platform.Include" version="5.1.1" requires="platform.Include_common devices.core.Cortex-M0">
+      <source path="./Include">
+        <files mask="core_cm0.h"/>
+      </source>
+    </component>
+   <component name="platform.Include_core_cm0plus" type="CMSIS_Include" provides="platform.Include" version="5.1.1" requires="platform.Include_common devices.core.Cortex-M0P">
+      <source path="./Include">
+        <files mask="core_cm0plus.h"/>
+      </source>
+    </component>
+   <component name="platform.Include_core_cm3" type="CMSIS_Include" provides="platform.Include" version="5.1.1" requires="platform.Include_common devices.core.Cortex-M3">
+      <source path="./Include">
+        <files mask="core_cm3.h"/>
+      </source>
+    </component>
+    <component name="platform.Include_core_cm4.supported_cores.cm4" provides="platform.Include_core_cm4.supported_cores" requires="devices.core.Cortex-M4"/>
+    <component name="platform.Include_core_cm4.supported_cores.cm4f" provides="platform.Include_core_cm4.supported_cores" requires="devices.core.Cortex-M4F"/>
+    <component name="platform.Include_core_cm4" type="CMSIS_Include" provides="platform.Include" version="5.1.1" requires="platform.Include_core_cm4.supported_cores platform.Include_common">
+      <source path="./Include">
+        <files mask="core_cm4.h"/>
+      </source>
+    </component>
+    <component name="platform.Include_core_cm7.supported_cores.cm7" provides="platform.Include_core_cm7.supported_cores" requires="devices.core.Cortex-M7"/>
+    <component name="platform.Include_core_cm7.supported_cores.cm7f" provides="platform.Include_core_cm7.supported_cores" requires="devices.core.Cortex-M7F"/>
+    <component name="platform.Include_core_cm7" type="CMSIS_Include" provides="platform.Include" version="5.1.1" requires="platform.Include_core_cm7.supported_cores platform.Include_common">
+      <source path="./Include">
+        <files mask="core_cm7.h"/>
+      </source>
+    </component>
+    <component name="platform.Include_core_sc000" type="CMSIS_Include" provides="platform.Include" version="5.1.1" requires="devices.core.Cortex-SC000 platform.Include_common">
+      <source path="./Include">
+        <files mask="core_sc000.h"/>
+      </source>
+    </component>
+    <component name="platform.Include_core_sc300" type="CMSIS_Include" provides="platform.Include" version="5.1.1" requires="devices.core.Cortex-SC300 platform.Include_common">
+      <source path="./Include">
+        <files mask="core_sc300.h"/>
+      </source>
+    </component>
+    <component name="platform.Include_core_cm23" type="CMSIS_Include" provides="platform.Include" version="5.1.1" requires="devices.core.Cortex-M23 platform.Include_common">
+      <source path="./Include">
+        <files mask="core_cm23.h"/>
+        <files mask="tz_context.h"/>
+      </source>
+    </component>
+    <component name="platform.Include_core_cm33" type="CMSIS_Include" provides="platform.Include" version="5.1.1" requires="devices.core.Cortex-M33 platform.Include_common">
+      <source path="./Include">
+        <files mask="core_cm33.h"/>
+        <files mask="tz_context.h"/>
+      </source>
+    </component>
+    <component name="platform.CMSIS" type="CMSIS" ui_name="" requires="platform.Include platform.CMSIS.DriverTemplates platform.CMSIS.DriverInclude" version="5.1.1">
+      <source path="./">
+        <files mask="*.meta"/>
+        <files mask="*.html"/>
+        <files mask="*.pdf"/>
+        <files mask="*.rtf"/>
+        <files mask="*.txt"/>
+      </source>
+      <source path="./Include">
+        <files mask="*.h"/>
+      </source>
+    </component>
+    <component name="platform.CMSIS_DSP_Lib" type="CMSIS" ui_name="CMSIS DSP Library" ui_description="CMSIS DSP Software Library" ui_category="Middleware" ui_control="True" ui_control_default="True" ui_release_specific="True" version="1.5.2">
+      <source path="./DSP_Lib">
+        <files mask="*.txt"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_class_marks_example">
+        <files mask="*.c"/>
+        <files mask="*.ini"/>
+        <files mask="*.txt"/>
+        <files mask="*.uvoptx"/>
+        <files mask="*.uvprojx"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_class_marks_example/RTE">
+        <files mask="*.h"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_class_marks_example/RTE/Device/ARMCM0">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_class_marks_example/RTE/Device/ARMCM3">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_class_marks_example/RTE/Device/ARMCM4_FP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_class_marks_example/RTE/Device/ARMCM7_SP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_convolution_example">
+        <files mask="*.c"/>
+        <files mask="*.h"/>
+        <files mask="*.ini"/>
+        <files mask="*.txt"/>
+        <files mask="*.uvoptx"/>
+        <files mask="*.uvprojx"/>  
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_convolution_example/RTE">
+        <files mask="*.h"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_convolution_example/RTE/Device/ARMCM0">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_convolution_example/RTE/Device/ARMCM3">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_convolution_example/RTE/Device/ARMCM4_FP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_convolution_example/RTE/Device/ARMCM7_SP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_dotproduct_example">
+        <files mask="*.c"/>
+        <files mask="*.ini"/>
+        <files mask="*.txt"/>
+        <files mask="*.uvoptx"/>
+        <files mask="*.uvprojx"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE">
+        <files mask="*.h"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE/Device/ARMCM0">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE/Device/ARMCM3">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE/Device/ARMCM4_FP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE/Device/ARMCM7_SP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_fft_bin_example">
+        <files mask="*.c"/>
+        <files mask="*.ini"/>
+        <files mask="*.txt"/>
+        <files mask="*.uvoptx"/>
+        <files mask="*.uvprojx"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE">
+        <files mask="*.h"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE/Device/ARMCM0">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE/Device/ARMCM3">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE/Device/ARMCM4_FP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE/Device/ARMCM7_SP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_fir_example">
+        <files mask="*.c"/>
+        <files mask="*.h"/>
+        <files mask="*.ini"/>
+        <files mask="*.uvoptx"/>
+        <files mask="*.uvprojx"/>
+        <files mask="*.txt"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_fir_example/RTE">
+        <files mask="*.h"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_fir_example/RTE/Device/ARMCM0">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_fir_example/RTE/Device/ARMCM3">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_fir_example/RTE/Device/ARMCM4_FP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_fir_example/RTE/Device/ARMCM7_SP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_graphic_equalizer_example">
+        <files mask="*.c"/>
+        <files mask="*.h"/>
+        <files mask="*.ini"/>
+        <files mask="*.uvoptx"/>
+        <files mask="*.uvprojx"/>
+        <files mask="*.txt"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE">
+        <files mask="*.h"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE/Device/ARMCM0">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE/Device/ARMCM3">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE/Device/ARMCM4_FP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE/Device/ARMCM7_SP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_linear_interp_example">
+        <files mask="*.c"/>
+        <files mask="*.h"/>
+        <files mask="*.ini"/>
+        <files mask="*.uvoptx"/>
+        <files mask="*.uvprojx"/>
+        <files mask="*.txt"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE">
+        <files mask="*.h"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE/Device/ARMCM0">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE/Device/ARMCM3">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE/Device/ARMCM4_FP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE/Device/ARMCM7_SP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_matrix_example">
+        <files mask="*.c"/>
+        <files mask="*.h"/>
+        <files mask="*.ini"/>
+        <files mask="*.uvoptx"/>
+        <files mask="*.uvprojx"/>
+        <files mask="*.txt"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_matrix_example/RTE">
+        <files mask="*.h"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_matrix_example/RTE/Device/ARMCM0">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_matrix_example/RTE/Device/ARMCM3">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_matrix_example/RTE/Device/ARMCM4_FP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_matrix_example/RTE/Device/ARMCM7_SP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_signal_converge_example">
+        <files mask="*.c"/>
+        <files mask="*.h"/>
+        <files mask="*.ini"/>
+        <files mask="*.uvoptx"/>
+        <files mask="*.uvprojx"/>
+        <files mask="*.txt"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE">
+        <files mask="*.h"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM0">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM3">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM4_FP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM7_SP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_sin_cos_example">
+        <files mask="*.c"/>
+       <files mask="*.ini"/>
+        <files mask="*.uvoptx"/>
+        <files mask="*.uvprojx"/>
+        <files mask="*.txt"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE">
+        <files mask="*.h"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM0">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM3">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM4_FP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM7_SP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_variance_example">
+        <files mask="*.c"/>
+        <files mask="*.ini"/>
+        <files mask="*.uvoptx"/>
+        <files mask="*.uvprojx"/>
+        <files mask="*.txt"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_variance_example/RTE">
+        <files mask="*.h"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_variance_example/RTE/Device/ARMCM0">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_variance_example/RTE/Device/ARMCM3">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_variance_example/RTE/Device/ARMCM4_FP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Examples/ARM/arm_variance_example/RTE/Device/ARMCM7_SP">
+        <files mask="*.c"/>
+        <files mask="*.s"/>
+      </source>
+      <source path="./DSP_Lib/Source/ARM">
+        <files mask="*.bat"/>
+        <files mask="*.uvoptx"/>
+        <files mask="*.uvprojx"/>
+      </source>
+      <source path="./DSP_Lib/Source/BasicMathFunctions">
+        <files mask="*.c"/>
+      </source>
+      <source path="./DSP_Lib/Source/CommonTables">
+        <files mask="*.c"/>
+      </source>
+      <source path="./DSP_Lib/Source/ComplexMathFunctions">
+        <files mask="*.c"/>
+      </source>
+      <source path="./DSP_Lib/Source/ControllerFunctions">
+        <files mask="*.c"/>
+      </source>
+      <source path="./DSP_Lib/Source/FastMathFunctions">
+        <files mask="*.c"/>
+      </source>
+      <source path="./DSP_Lib/Source/FilteringFunctions">
+        <files mask="*.c"/>
+      </source>
+      <source path="./DSP_Lib/Source/GCC">
+        <files mask="*.bat"/>
+        <files mask="*.uvoptx"/>
+        <files mask="*.uvprojx"/>
+      </source>
+      <source path="./DSP_Lib/Source/MatrixFunctions">
+        <files mask="*.c"/>
+      </source>
+      <source path="./DSP_Lib/Source/StatisticsFunctions">
+        <files mask="*.c"/>
+      </source>
+      <source path="./DSP_Lib/Source/SupportFunctions">
+        <files mask="*.c"/>
+      </source>
+      <source path="./DSP_Lib/Source/TransformFunctions">
+        <files mask="*.S"/>
+        <files mask="*.c"/>
+      </source>
+      <source path="./Lib">
+        <files mask="*.txt"/>
+      </source>
+    </component>
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM0l_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M0P" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM0l_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_cortexM0l_math.a"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM0b_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M0P" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM0b_math.lib"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM3l_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M3" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM3l_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_cortexM3l_math.a"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM3b_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M3" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM3b_math.lib"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM4l_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M4" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM4l_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_cortexM4l_math.a"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM4b_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M4" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM4b_math.lib"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM4lf_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M4F" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM4lf_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_cortexM4lf_math.a"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM4bf_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M4F" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM4bf_math.lib"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM7l_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M7" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM7l_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_cortexM7l_math.a"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM7b_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M7" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM7b_math.lib"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM7lfdp_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M7F" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM7lfdp_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_cortexM7lfdp_math.a"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM7bfdp_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M7F" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM7bfdp_math.lib"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM7lfsp_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M7F" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM7lfsp_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_cortexM7lfsp_math.a"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_cortexM7bfsp_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M7F" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_cortexM7bfsp_math.lib"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_ARMv8MBLl_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M23" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_ARMv8MBLl_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_ARMv8MBLl_math.a"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_ARMv8MMLl_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M23" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_ARMv8MMLl_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_ARMv8MMLl_math.a"/>
+     </source>
+    </component>
+    
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_ARMv8MBLl_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M33" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_ARMv8MBLl_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_ARMv8MBLl_math.a"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_ARMv8MMLl_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M33" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_ARMv8MMLl_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_ARMv8MMLl_math.a"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_ARMv8MMLld_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M33F" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_ARMv8MMLld_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_ARMv8MMLld_math.a"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_ARMv8MMLldfsp_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M33F" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_ARMv8MMLldfsp_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_ARMv8MMLldfsp_math.a"/>
+     </source>
+    </component>
+    
+   <component name="platform.CMSIS_DSP_Lib.arm_ARMv8MMLlfsp_math" requires="platform.CMSIS_DSP_Lib devices.core.Cortex-M33F" provides="platform.Include" type="CMSIS_driver" version="1.5.2">
+     <source path="./Lib/ARM" requires="compilers.arm">
+       <files mask="arm_ARMv8MMLlfsp_math.lib"/>
+     </source>
+     <source path="./Lib/GCC" requires="compilers.gcc">
+       <files mask="libarm_ARMv8MMLlfsp_math.a"/>
+     </source>
+    </component>   
+    <component name="platform.CMSIS_Driver" type="CMSIS" provides="platform.CMSIS.DriverTemplates" version="5.1.1">
+      <source path="./Driver/DriverTemplates">
+        <files mask="*.c"/>
+        <files mask="*.h"/>
+      </source>
+    </component>
+   <component name="platform.CMSIS_Driver_Include.CAN_CMSISInclude" type="CMSIS_driver" requires="platform.CMSIS_Driver_Include.Common_CMSISInclude" provides="platform.CMSIS.DriverInclude" version="1.2.0" description="CMSIS Driver_CAN.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_CAN.h"/>
+      </source>      
+    </component>
+    <component name="platform.CMSIS_Driver_Include.Common_CMSISInclude" type="CMSIS_driver" provides="platform.CMSIS.DriverInclude" version="5.1.1" description="CMSIS Driver_Common.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_Common.h"/>
+      </source>      
+    </component> 
+    <component name="platform.CMSIS_Driver_Include.Ethernet_CMSISInclude" requires="platform.CMSIS_Driver_Include.Common_CMSISInclude" type="CMSIS_driver" provides="platform.CMSIS.DriverInclude" version="2.1.0" description="CMSIS Driver_ETH.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_ETH.h"/>
+      </source>      
+    </component> 
+    <component name="platform.CMSIS_Driver_Include.Ethernet_MAC_CMSISInclude" requires="platform.CMSIS_Driver_Include.Ethernet_CMSISInclude" type="CMSIS_driver" provides="platform.CMSIS.DriverInclude" version="2.1.0" description="CMSIS Driver_ETH_MAC.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_ETH_MAC.h"/>
+      </source>      
+    </component> 
+    <component name="platform.CMSIS_Driver_Include.Ethernet_PHY_CMSISInclude" requires="platform.CMSIS_Driver_Include.Ethernet_CMSISInclude" type="CMSIS_driver" provides="platform.CMSIS.DriverInclude" version="2.1.0" description="CMSIS Driver_ETH_PHY.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_ETH_PHY.h"/>
+      </source>      
+    </component>  
+    <component name="platform.CMSIS_Driver_Include.Flash_CMSISInclude" type="CMSIS_driver" requires="platform.CMSIS_Driver_Include.Common_CMSISInclude" provides="platform.CMSIS.DriverInclude" version="2.1.0" description="CMSIS Driver_Flash.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_Flash.h"/>
+      </source>      
+    </component>   
+    <component name="platform.CMSIS_Driver_Include.I2C_CMSISInclude" type="CMSIS_driver"  requires="platform.CMSIS_Driver_Include.Common_CMSISInclude" provides="platform.CMSIS.DriverInclude" version="2.3.0" description="CMSIS Driver_I2C.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_I2C.h"/>
+      </source>      
+    </component>  
+    <component name="platform.CMSIS_Driver_Include.MCI_CMSISInclude" type="CMSIS_driver" requires="platform.CMSIS_Driver_Include.Common_CMSISInclude" provides="platform.CMSIS.DriverInclude" version="2.3.0" description="CMSIS Driver_MCI.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_MCI.h"/>
+      </source>      
+    </component>  
+    <component name="platform.CMSIS_Driver_Include.NAND_CMSISInclude" type="CMSIS_driver" requires="platform.CMSIS_Driver_Include.Common_CMSISInclude" provides="platform.CMSIS.DriverInclude" version="2.3.0" description="CMSIS Driver_NAND.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_NAND.h"/>
+      </source>      
+    </component>   
+    <component name="platform.CMSIS_Driver_Include.SAI_CMSISInclude" type="CMSIS_driver" requires="platform.CMSIS_Driver_Include.Common_CMSISInclude" provides="platform.CMSIS.DriverInclude" version="1.1.0" description="CMSIS Driver_SAI.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_SAI.h"/>
+      </source>      
+    </component>     
+    <component name="platform.CMSIS_Driver_Include.SPI_CMSISInclude" type="CMSIS_driver" requires="platform.CMSIS_Driver_Include.Common_CMSISInclude" provides="platform.CMSIS.DriverInclude" version="2.2.0" description="CMSIS Driver_SPI.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_SPI.h"/>
+      </source>      
+    </component>  
+    <component name="platform.CMSIS_Driver_Include.USART_CMSISInclude" type="CMSIS_driver" requires="platform.CMSIS_Driver_Include.Common_CMSISInclude" provides="platform.CMSIS.DriverInclude" version="2.3.0" description="CMSIS Driver_USART.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_USART.h"/>
+      </source>      
+    </component>    
+    <component name="platform.CMSIS_Driver_Include.USB_CMSISInclude" type="CMSIS_driver" requires="platform.CMSIS_Driver_Include.Common_CMSISInclude" provides="platform.CMSIS.DriverInclude" version="2.2.0" description="CMSIS Driver_USB.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_USB.h"/>
+      </source>      
+    </component>   
+   <component name="platform.CMSIS_Driver_Include.USB_Device_CMSISInclude" requires="platform.CMSIS_Driver_Include.USB_CMSISInclude" type="CMSIS_driver" provides="platform.CMSIS.DriverInclude" version="2.2.0" description="CMSIS Driver_USBD.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_USBD.h"/>
+      </source>      
+    </component>   
+   <component name="platform.CMSIS_Driver_Include.USB_Host_CMSISInclude" requires="platform.CMSIS_Driver_Include.USB_CMSISInclude" type="CMSIS_driver" provides="platform.CMSIS.DriverInclude" version="2.2.0" description="CMSIS Driver_USBH.h" user_visible="false">
+      <source path="./Driver/Include" target_path="CMSIS_driver">
+        <files mask="Driver_USBH.h"/>
+      </source>      
+    </component>                            
+  </components>
+</metadata>

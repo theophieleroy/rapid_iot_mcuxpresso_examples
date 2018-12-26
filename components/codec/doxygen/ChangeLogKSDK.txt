@@ -1,0 +1,51 @@
+/*
+@page driver_log Driver Change Log
+
+@section codec CODEC
+  The current codec common driver version is 2.0.0.
+
+  - 2.0.0
+    - Initial version.
+
+@section wm8904 WM8904
+  The current wm8904 driver version is 2.0.1.
+
+  - 2.0.1
+    - Add WM8904_CheckAudioFormat api.
+    - Change WM8904_SetAudioFormat second parameter name to sysclk.
+
+  - 2.0.0
+    - Initial version.
+
+@section wm8524 WM8524
+  The current wm8524 driver version is 2.0.0.
+
+  - 2.0.0
+    - Initial version.
+
+@section wm8960 WM8960
+  The current wm8960 driver version is 2.0.1.
+  - 2.0.1
+    - Correct the bclk divider calculation.
+
+  - 2.0.0
+    - Initial version.
+
+@section sgtl5000 SGTL5000
+  The current sgtl5000 driver version is 2.0.0.
+
+  - 2.0.0
+    - Initial version.
+
+@section da7212 DA7212
+  The current da7212 driver version is 2.0.0.
+
+  - 2.0.0
+    - Initial version.
+
+@section cs42888 CS42888
+  The current cs42888 driver version is 2.0.0.
+
+  - 2.0.0
+    - Initial version.
+*/

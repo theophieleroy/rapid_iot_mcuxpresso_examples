@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_proxr" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_proxr.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/prox/proxr/api">
+        <files mask="proxr_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/prox/proxr/src">
+        <files mask="proxr.c"/>
+        <files mask="proxr.h"/>
+        <files mask="proxr_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

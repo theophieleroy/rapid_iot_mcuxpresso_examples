@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_scpps" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_scpps.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/scpp/scpps/api">
+        <files mask="scpps_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/scpp">
+        <files mask="scpp_common.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/scpp/scpps/src">
+        <files mask="scpps.c"/>
+        <files mask="scpps.h"/>
+        <files mask="scpps_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

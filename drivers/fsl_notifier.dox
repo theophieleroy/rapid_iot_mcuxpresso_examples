@@ -1,0 +1,107 @@
+/*!
+@page drv_err Driver errors status
+ - #kStatus_NOTIFIER_ErrorNotificationBefore = 9800
+ - #kStatus_NOTIFIER_ErrorNotificationAfter = 9801
+*/
+
+/*!
+
+@defgroup notifier Notification Framework
+@details This section describes the programming interface of the Notifier driver.
+
+# Notifier Overview {#NotifierOv}
+
+The Notifier provides a configuration dynamic change service. Based on this
+service, applications can switch between pre-defined configurations.
+The Notifier enables drivers and applications to register callback functions to this framework.
+Each time that the configuration is changed, drivers and applications receive a notification
+and change their settings. To simplify, the Notifier only supports the static callback registration.
+This means that, for applications, all callback functions are collected into a static table and passed
+to the Notifier.
+
+  These are the steps for the configuration transition.
+
+    1.  Before configuration transition, the Notifier sends a "BEFORE" message
+    to the callback table. When this message is received, IP drivers should check whether any
+    current processes can be stopped and stop them. If the processes cannot be stopped,
+    the callback function returns an error.\n
+    The Notifier supports two types of transition policies, a graceful policy
+    and a forceful policy. When the graceful policy is used, if some callbacks return
+    an error while sending a "BEFORE" message, the configuration transition stops and the
+    Notifier sends a "RECOVER" message to all drivers that have stopped.
+    Then, these drivers can recover the previous status and continue to work.
+    When the forceful policy is used, drivers are stopped forcefully.
+
+    2.  After the "BEFORE" message is processed successfully, the system switches to the new configuration.
+
+    3.  After the configuration changes, the Notifier sends an "AFTER"
+    message to the callback table to notify drivers that the configuration transition is finished.
+
+This example shows how to use the Notifier in the Power Manager application.
+
+~~~~~{.c}
+   
+    #include "fsl_notifier.h"
+    
+    // Definition of the Power Manager callback.
+    status_t callback0(notifier_notification_block_t *notify, void *data)
+    {
+        
+        status_t ret = kStatus_Success;
+        
+        ...
+        ...
+        ...
+
+        return ret;
+    }
+    // Definition of the Power Manager user function.
+    status_t APP_PowerModeSwitch(notifier_user_config_t *targetConfig, void *userData)
+    {
+        ...
+        ...
+        ...
+    }
+    ...
+    ...
+    ...
+    ...
+    ...
+    // Main function.
+    int main(void)
+    {
+        // Define a notifier handle.
+        notifier_handle_t powerModeHandle;
+        
+        // Callback configuration.
+        user_callback_data_t callbackData0;
+        
+        notifier_callback_config_t callbackCfg0 = {callback0,
+                    kNOTIFIER_CallbackBeforeAfter,
+                    (void *)&callbackData0};
+        
+        notifier_callback_config_t callbacks[] = {callbackCfg0};
+        
+        // Power mode configurations.
+        power_user_config_t vlprConfig;
+        power_user_config_t stopConfig;
+        
+        notifier_user_config_t *powerConfigs[] = {&vlprConfig, &stopConfig};
+        
+        // Definition of a transition to and out the power modes.
+        vlprConfig.mode = kAPP_PowerModeVlpr;
+        vlprConfig.enableLowPowerWakeUpOnInterrupt = false;
+        
+        stopConfig = vlprConfig;
+        stopConfig.mode = kAPP_PowerModeStop;
+        
+        // Create Notifier handle.
+        NOTIFIER_CreateHandle(&powerModeHandle, powerConfigs, 2U, callbacks, 1U, APP_PowerModeSwitch, NULL);
+        ...
+        ...
+        // Power mode switch.
+        NOTIFIER_switchConfig(&powerModeHandle, targetConfigIndex, kNOTIFIER_PolicyAgreement);
+    }
+~~~~~
+
+*/

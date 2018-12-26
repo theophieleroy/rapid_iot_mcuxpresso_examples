@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_eif_adapter_uart" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_eif_adapter_uart.meta"/>
+      </source>
+      <source path="./../modules/eif_adapter/api">
+        <files mask="eif_adapter.h"/>
+      </source>
+      <source path="./../modules/eif_adapter/src">
+        <files mask="eif_adapter.c"/>
+      </source>
+      <source path="./../modules/eif_adapter/src/uart_adapter">
+        <files mask="uart_adapter.h"/>
+        <files mask="uart_adapter.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

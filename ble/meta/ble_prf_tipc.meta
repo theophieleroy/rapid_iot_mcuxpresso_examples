@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_tipc" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_tipc.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/tip/tipc/api">
+        <files mask="tipc_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/tip/tipc/src">
+        <files mask="tipc.c"/>
+        <files mask="tipc.h"/>
+        <files mask="tipc_task.c"/>
+      </source>
+      <source path="./../ip/ble/profiles/tip">
+        <files mask="tip_common.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

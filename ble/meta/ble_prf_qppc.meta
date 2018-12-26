@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_qppc" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_qppc.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/qpp/qppc/api">
+        <files mask="qppc_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/qpp">
+        <files mask="qpp_common.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/qpp/qppc/src">
+        <files mask="qppc.c"/>
+        <files mask="qppc.h"/>
+        <files mask="qppc_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_common" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_common.meta"/>
+      </source>
+      <source path="./../ip/ble/hl/api">
+        <files mask="prf_types.h"/>
+      </source>
+      <source path="./../ip/ble/hl/src/prf">
+        <files mask="prf.c"/>
+        <files mask="prf_utils.c"/>
+      </source>
+      <source path="./../ip/ble/hl/inc">
+        <files mask="prf.h"/>
+        <files mask="prf_utils.h"/>
+        <files mask="rwprf_config.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

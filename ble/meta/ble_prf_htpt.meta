@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_htpt" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_htpt.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/htp/htpt/api">
+        <files mask="htpt_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/htp/htpt/src">
+        <files mask="htpt.c"/>
+        <files mask="htpt.h"/>
+        <files mask="htpt_task.c"/>
+      </source>
+      <source path="./../ip/ble/profiles/htp">
+        <files mask="htp_common.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

@@ -1,0 +1,16 @@
+Overview
+====================
+ * The touch & button demo demonstrates basic usage of the accelerometer and gyroscope, as well as basic functionalities 
+   related to touchpad and button pressing.
+ * The right menu: every 0.5 seconds the data displayed is updated with what the accelerometer registers.
+ * The left menu: every 1 second the data displayed is updated with what the gyroscope registers.
+ * Pressing the upper right button turns on and off the display without stopping the demo.
+
+
+Usage
+====================
+ * This demo requires user interaction.
+ * Touching the sides of the RPK as indicated by the arrows on the screen, switches between the two menus.
+ * Pressing the upper right button turns on and off the display. Touching the RPK sides while the display is off 
+   still changes between the menus.
+   

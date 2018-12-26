@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_findl" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_findl.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/find">
+        <files mask="find_common.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/find/findl/src">
+        <files mask="findl.c"/>
+        <files mask="findl.h"/>
+        <files mask="findl_task.c"/>
+      </source>
+      <source path="./../ip/ble/profiles/find/findl/api">
+        <files mask="findl_task.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

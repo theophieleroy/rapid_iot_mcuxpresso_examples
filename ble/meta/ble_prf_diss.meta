@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_diss" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_diss.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/dis/diss/api">
+        <files mask="diss_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/dis/diss/src">
+        <files mask="diss.c"/>
+        <files mask="diss.h"/>
+        <files mask="diss_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

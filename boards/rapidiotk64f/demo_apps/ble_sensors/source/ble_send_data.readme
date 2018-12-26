@@ -1,0 +1,26 @@
+Overview
+====================
+ * The ble_send_data demo illustrates basic usage of temperature and humidity sensors, and
+   BLE(Bluetooth Low Energy) functionality of the RPK.
+ * The RPK creates 3 services, each with its own characteristics,
+   including the "Sensor" service with "Temperature" and "Humidity" characteristics.
+ * The RPK is waiting for a new connection to a device via BLE.
+ * Once the connection is established, the RPK will update data from sensors and
+   notify the device about new values.
+
+Usage
+====================
+ * This demo requires user interaction.
+ * User has to:
+      1. download the "nRF Connect" application from "Play Store" on an Android device.
+      2. power on the RPK.
+      3. turn on the phone`s bluetooth and open the "nRF Connect" application.
+      4. on first usage, user has to pair with the RPK. 
+         on the RPK will be displayed the pairing code of 6 digits.
+         user has to enter the code to successfully pair with the RPK.
+      5. in the "nRF Connect" application, click "connect" on the desired RPK name.
+      6. in the "nRF Connect" application will be displayed 3 services. The first 2 are default and 
+         the third contains the "Temperature" and "Humidity" characteristics which are
+         updated automatically each second.
+
+ 

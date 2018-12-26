@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_tips" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_tips.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/tip/tips/api">
+        <files mask="tips_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/tip/tips/src">
+        <files mask="tips.c"/>
+        <files mask="tips.h"/>
+        <files mask="tips_task.c"/>
+      </source>
+      <source path="./../ip/ble/profiles/tip">
+        <files mask="tip_common.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

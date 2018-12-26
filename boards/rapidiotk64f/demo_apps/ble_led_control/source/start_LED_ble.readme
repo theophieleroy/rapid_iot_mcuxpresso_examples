@@ -1,0 +1,25 @@
+Overview
+====================
+ * This demo demonstrates basic usage of the Bluetooth Low Energy(BLE) functionalities of the RPK.
+ * Through the BLE, data is sent from a phone to the device and, in the case of this demo, a LED colour can be changed.
+ * Once the demo is launched and running on the RPK, it will try connecting to a nearby phone.
+ * After connecting to a BLE network, a user can notify the RPK, through the phone, to change the LED colour by modifying one byte.
+
+
+Usage
+====================
+ * This demo requires a phone with the "nRF Connect" application installed.
+ * This demo requires user input.
+ * The user has to:
+ 	1. Turn the phone's bluetooth on.
+ 	2. Start the "nRF Connect" application.
+ 	3. Connect the phone with the RPK, through the "nRF Connect" application.
+ 		-> If it is the first time connecting, the devices have to be paired.
+ 		-> The RPK will display a pairing code of six digits that the user has to 
+ 		enter in the phone application.
+ 	4. In the "nRF Connect" application, three services will be displayed. The first two are default and 
+ 		the third contains the "LED" characteristic which is updated once the user modifies it.
+ 		-> The user can choose to send a value saved previously or write a new one.
+ 		-> The first byte to be written represents luminosity and takes values from 00 and 03.
+ 		-> The first byte to be written represents colour and takes values from 00 and 06.
+ 

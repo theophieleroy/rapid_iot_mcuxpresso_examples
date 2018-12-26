@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.flash" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="flash.meta"/>
+      </source>
+      <source path="./../modules/Flash/Internal">
+        <files mask="Flash_Adapter.h"/>
+        <files mask="Flash_Adapter.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

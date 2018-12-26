@@ -1,0 +1,14 @@
+/*
+@page drv_err Driver errors status
+*/
+
+/*!
+@defgroup codec CODEC: codec Driver
+@details The MCUXpresso SDK provides a common codec driver interface to access codec register.
+
+# Typical use case {#CODECTypUC}
+
+## CODEC Operation {#CODECOperation}
+
+*/
+

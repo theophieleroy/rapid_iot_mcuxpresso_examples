@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_paspc" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_paspc.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/pasp">
+        <files mask="pasp_common.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/pasp/paspc/api">
+        <files mask="paspc_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/pasp/paspc/src">
+        <files mask="paspc.c"/>
+        <files mask="paspc.h"/>
+        <files mask="paspc_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

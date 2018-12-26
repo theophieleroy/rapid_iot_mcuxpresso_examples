@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_lans" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_lans.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/lan/lans/api">
+        <files mask="lans_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/lan">
+        <files mask="lan_common.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/lan/lans/src">
+        <files mask="lans.c"/>
+        <files mask="lans.h"/>
+        <files mask="lans_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

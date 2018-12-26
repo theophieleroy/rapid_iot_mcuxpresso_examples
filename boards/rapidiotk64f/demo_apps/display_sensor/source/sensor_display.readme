@@ -1,0 +1,12 @@
+Overview
+====================
+ * The accelerometer sensor demo demonstrates basic usage of the accelerometer and user interface functionalities 
+   to implement the data registered by a sensor of the RPK.
+ * Every 0.5 seconds the data displayed is updated with what the sensor registers.
+
+
+Usage
+====================
+ * This demo does not require user input.
+ * Data is taken from the sensor using the "get_acceleration" method and then displayed.
+ 

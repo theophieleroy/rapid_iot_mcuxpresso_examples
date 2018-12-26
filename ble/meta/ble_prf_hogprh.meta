@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_hogprh" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_hogprh.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/hogp/hogprh/api">
+        <files mask="hogprh_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/hogp/hogprh/src">
+        <files mask="hogprh.c"/>
+        <files mask="hogprh.h"/>
+        <files mask="hogprh_task.c"/>
+      </source>
+      <source path="./../ip/ble/profiles/hogp">
+        <files mask="hogp_common.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>

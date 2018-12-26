@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_cpps" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_cpps.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/cpp">
+        <files mask="cpp_common.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/cpp/cpps/api">
+        <files mask="cpps_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/cpp/cpps/src">
+        <files mask="cpps.c"/>
+        <files mask="cpps.h"/>
+        <files mask="cpps_task.c"/>
+      </source>
+    </component>
+  </components>
+</metadata>

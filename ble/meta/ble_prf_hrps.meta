@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <components>
+    <component name="middleware.qn_ble.ble_prf_hrps" type="middleware" requires="devices.modules.StackType_QN_BLE">
+      <source path="./">
+        <files mask="ble_prf_hrps.meta"/>
+      </source>
+      <source path="./../ip/ble/profiles/hrp/hrps/api">
+        <files mask="hrps_task.h"/>
+      </source>
+      <source path="./../ip/ble/profiles/hrp/hrps/src">
+        <files mask="hrps.c"/>
+        <files mask="hrps.h"/>
+        <files mask="hrps_task.c"/>
+      </source>
+      <source path="./../ip/ble/profiles/hrp">
+        <files mask="hrp_common.h"/>
+      </source>
+    </component>
+  </components>
+</metadata>
