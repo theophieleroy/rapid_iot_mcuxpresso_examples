@@ -7,7 +7,7 @@ Please find enclosed example projects. See below the different projects included
 This is not an SDK package, you do not want to install this package as a classical SDK.
 
  
-HOW TO IMPORT EXAMPLES PROJECTS
+#HOW TO IMPORT EXAMPLES PROJECTS
 
     Download RAPID-IOT-EXAMPLES package included below.
     Extract the package on your hard drive.
@@ -22,9 +22,9 @@ HOW TO IMPORT EXAMPLES PROJECTS
 Sources of projects can be found under the path: "boards\rapidiotk64f\demo_apps"
 
  
-PROJECTS PACKAGE LIST
+#PROJECTS PACKAGE LIST
 
-    display_sensor
+##display_sensor
 
 Display accelerometer information on Rapid-IoT display at regular intervals.
 
@@ -36,7 +36,7 @@ Learn How To :
 
  
 
-    display_sensor_touch_interface
+##display_sensor_touch_interface
 
 Display gyroscope and accelerometer information on Rapid-IoT display at regular intervals.
 
@@ -50,7 +50,7 @@ Learn How To:
 
  
 
-    ncf_tag_write
+##ncf_tag_write
 
 Record time stamps for falls and shocks in the NFC tags. The use case is logistic/asset tracking.
 
@@ -59,8 +59,7 @@ Learn How To:
 - Use the NFC tag to store information
 
  
-
-    bles_sensors
+##ble_sensors
 
 Display temperature and humidity information collected by kit and send them over BLE to a smartphone.
 
@@ -70,7 +69,7 @@ Learn How To:
 
  
 
-    ble_led_control
+##ble_led_control
 
 Change LED state color and intensity over BLE
 
@@ -80,7 +79,7 @@ Learn How To:
 
  
 
-    weather_station
+##weather_station
 
 Display temperature, humidity, air pressure and light information collected on kit on a mobile phone via BLE.
 
