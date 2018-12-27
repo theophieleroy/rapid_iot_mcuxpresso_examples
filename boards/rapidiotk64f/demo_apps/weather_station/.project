@@ -10008,7 +10008,7 @@
 		</variable>
 		<variable>
 			<name>copy_PARENT1</name>
-			<value>$%7BPARENT-3-ECLIPSE_HOME%7D/_sdk_work/repo-directory/iot-rpk</value>
+			<value>$%7BPARENT-4-PROJECT_LOC%7D</value>
 		</variable>
 	</variableList>
 </projectDescription>
